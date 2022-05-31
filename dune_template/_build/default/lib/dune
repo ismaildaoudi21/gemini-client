@@ -1,0 +1,4 @@
+(library
+ (name ocamlgemini)
+ (libraries base stdio uri lwt lwt.unix ssl lwt_ssl textwrap lambda-term)
+)

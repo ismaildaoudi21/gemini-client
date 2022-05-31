@@ -1,0 +1,129 @@
+# dune build
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root:
+# /mnt/d/Ismail/Study/L3/S6/PP/Projet/gemini-client/dune_template
+# Auto-detected concurrency: 8
+$ /home/ismail/.opam/system/bin/ocamlc.opt -config > /tmp/dune_d639b8_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = "default"
+#  ; toplevel_path = Some External "/home/ismail/.opam/system/lib/toplevel"
+#  ; ocaml_bin = External "/home/ismail/.opam/system/bin"
+#  ; ocaml = Ok External "/home/ismail/.opam/system/bin/ocaml"
+#  ; ocamlc = External "/home/ismail/.opam/system/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/home/ismail/.opam/system/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/home/ismail/.opam/system/bin/ocamldep.opt"
+#  ; ocamlmklib = Ok External "/home/ismail/.opam/system/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" : "/home/ismail/.opam/system/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/home/ismail/.opam/system/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" :
+#            "/mnt/d/Ismail/Study/L3/S6/PP/Projet/gemini-client/dune_template"
+#        ; "INSIDE_DUNE" :
+#            "/mnt/d/Ismail/Study/L3/S6/PP/Projet/gemini-client/dune_template/_build/default"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/mnt/d/Ismail/Study/L3/S6/PP/Projet/gemini-client/dune_template/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/mnt/d/Ismail/Study/L3/S6/PP/Projet/gemini-client/dune_template/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/mnt/d/Ismail/Study/L3/S6/PP/Projet/gemini-client/dune_template/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_path = [ External "/home/ismail/.opam/system/lib" ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.14.0"
+#      ; standard_library_default = "/home/ismail/.opam/system/lib/ocaml"
+#      ; standard_library = "/home/ismail/.opam/system/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "gcc"
+#      ; ocamlc_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; ocamlopt_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; bytecomp_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-ldl"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; native_c_libraries = [ "-lm"; "-ldl" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "linux"
+#      ; asm = [ "as" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-pc-linux-gnu"
+#      ; target = "x86_64-pc-linux-gnu"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X031"
+#      ; cmi_magic_number = "Caml1999I031"
+#      ; cmo_magic_number = "Caml1999O031"
+#      ; cma_magic_number = "Caml1999A031"
+#      ; cmx_magic_number = "Caml1999Y031"
+#      ; cmxa_magic_number = "Caml1999Z031"
+#      ; ast_impl_magic_number = "Caml1999M031"
+#      ; ast_intf_magic_number = "Caml1999N031"
+#      ; cmxs_magic_number = "Caml1999D031"
+#      ; cmt_magic_number = "Caml1999T031"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && /home/ismail/.opam/system/bin/ocamldep.opt -modules -impl lib/network.ml) > _build/default/lib/.ocamlgemini.objs/network.ml.d
+$ (cd _build/default && /home/ismail/.opam/system/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I lib/.ocamlgemini.objs/byte -no-alias-deps -opaque -o lib/.ocamlgemini.objs/byte/ocamlgemini.cmo -c -impl lib/ocamlgemini.ml-gen)
+$ (cd _build/default && /home/ismail/.opam/system/bin/ocamldep.opt -modules -impl lib/demo.ml) > _build/default/lib/.ocamlgemini.objs/demo.ml.d
+$ (cd _build/default && /home/ismail/.opam/system/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.ocamlgemini.objs/byte -I /home/ismail/.opam/system/lib/angstrom -I /home/ismail/.opam/system/lib/base -I /home/ismail/.opam/system/lib/base/base_internalhash_types -I /home/ismail/.opam/system/lib/base/caml -I /home/ismail/.opam/system/lib/base/shadow_stdlib -I /home/ismail/.opam/system/lib/bigarray-compat -I /home/ismail/.opam/system/lib/bigstringaf -I /home/ismail/.opam/system/lib/camomile -I /home/ismail/.opam/system/lib/camomile/default_config -I /home/ismail/.opam/system/lib/camomile/dyn -I /home/ismail/.opam/system/lib/camomile/lib_default -I /home/ismail/.opam/system/lib/camomile/library -I /home/ismail/.opam/system/lib/charInfo_width -I /home/ismail/.opam/system/lib/lambda-term -I /home/ismail/.opam/system/lib/lwt -I /home/ismail/.opam/system/lib/lwt/unix -I /home/ismail/.opam/system/lib/lwt_log -I /home/ismail/.opam/system/lib/lwt_log/core -I /home/ismail/.opam/system/lib/lwt_react -I /home/ismail/.opam/system/lib/lwt_ssl -I /home/ismail/.opam/system/lib/mew -I /home/ismail/.opam/system/lib/mew_vi -I /home/ismail/.opam/system/lib/mmap -I /home/ismail/.opam/system/lib/ocaml/threads -I /home/ismail/.opam/system/lib/ocplib-endian -I /home/ismail/.opam/system/lib/ocplib-endian/bigstring -I /home/ismail/.opam/system/lib/react -I /home/ismail/.opam/system/lib/result -I /home/ismail/.opam/system/lib/seq -I /home/ismail/.opam/system/lib/sexplib0 -I /home/ismail/.opam/system/lib/ssl -I /home/ismail/.opam/system/lib/stdio -I /home/ismail/.opam/system/lib/stringext -I /home/ismail/.opam/system/lib/textwrap -I /home/ismail/.opam/system/lib/trie -I /home/ismail/.opam/system/lib/uri -I /home/ismail/.opam/system/lib/zed -no-alias-deps -opaque -open Ocamlgemini -o lib/.ocamlgemini.objs/byte/ocamlgemini__Demo.cmo -c -impl lib/demo.ml)
+$ (cd _build/default && /home/ismail/.opam/system/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.ocamlgemini.objs/byte -I /home/ismail/.opam/system/lib/angstrom -I /home/ismail/.opam/system/lib/base -I /home/ismail/.opam/system/lib/base/base_internalhash_types -I /home/ismail/.opam/system/lib/base/caml -I /home/ismail/.opam/system/lib/base/shadow_stdlib -I /home/ismail/.opam/system/lib/bigarray-compat -I /home/ismail/.opam/system/lib/bigstringaf -I /home/ismail/.opam/system/lib/camomile -I /home/ismail/.opam/system/lib/camomile/default_config -I /home/ismail/.opam/system/lib/camomile/dyn -I /home/ismail/.opam/system/lib/camomile/lib_default -I /home/ismail/.opam/system/lib/camomile/library -I /home/ismail/.opam/system/lib/charInfo_width -I /home/ismail/.opam/system/lib/lambda-term -I /home/ismail/.opam/system/lib/lwt -I /home/ismail/.opam/system/lib/lwt/unix -I /home/ismail/.opam/system/lib/lwt_log -I /home/ismail/.opam/system/lib/lwt_log/core -I /home/ismail/.opam/system/lib/lwt_react -I /home/ismail/.opam/system/lib/lwt_ssl -I /home/ismail/.opam/system/lib/mew -I /home/ismail/.opam/system/lib/mew_vi -I /home/ismail/.opam/system/lib/mmap -I /home/ismail/.opam/system/lib/ocaml/threads -I /home/ismail/.opam/system/lib/ocplib-endian -I /home/ismail/.opam/system/lib/ocplib-endian/bigstring -I /home/ismail/.opam/system/lib/react -I /home/ismail/.opam/system/lib/result -I /home/ismail/.opam/system/lib/seq -I /home/ismail/.opam/system/lib/sexplib0 -I /home/ismail/.opam/system/lib/ssl -I /home/ismail/.opam/system/lib/stdio -I /home/ismail/.opam/system/lib/stringext -I /home/ismail/.opam/system/lib/textwrap -I /home/ismail/.opam/system/lib/trie -I /home/ismail/.opam/system/lib/uri -I /home/ismail/.opam/system/lib/zed -no-alias-deps -opaque -open Ocamlgemini -o lib/.ocamlgemini.objs/byte/ocamlgemini__Network.cmo -c -impl lib/network.ml)
+$ (cd _build/default && /home/ismail/.opam/system/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I lib/.ocamlgemini.objs/byte -I lib/.ocamlgemini.objs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o lib/.ocamlgemini.objs/native/ocamlgemini.cmx -c -impl lib/ocamlgemini.ml-gen)
+$ (cd _build/default && /home/ismail/.opam/system/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/ocamlgemini.cma lib/.ocamlgemini.objs/byte/ocamlgemini.cmo lib/.ocamlgemini.objs/byte/ocamlgemini__Network.cmo lib/.ocamlgemini.objs/byte/ocamlgemini__Demo.cmo)
+$ (cd _build/default && /home/ismail/.opam/system/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.ocamlgemini.objs/byte -I lib/.ocamlgemini.objs/native -I /home/ismail/.opam/system/lib/angstrom -I /home/ismail/.opam/system/lib/base -I /home/ismail/.opam/system/lib/base/base_internalhash_types -I /home/ismail/.opam/system/lib/base/caml -I /home/ismail/.opam/system/lib/base/shadow_stdlib -I /home/ismail/.opam/system/lib/bigarray-compat -I /home/ismail/.opam/system/lib/bigstringaf -I /home/ismail/.opam/system/lib/camomile -I /home/ismail/.opam/system/lib/camomile/default_config -I /home/ismail/.opam/system/lib/camomile/dyn -I /home/ismail/.opam/system/lib/camomile/lib_default -I /home/ismail/.opam/system/lib/camomile/library -I /home/ismail/.opam/system/lib/charInfo_width -I /home/ismail/.opam/system/lib/lambda-term -I /home/ismail/.opam/system/lib/lwt -I /home/ismail/.opam/system/lib/lwt/unix -I /home/ismail/.opam/system/lib/lwt_log -I /home/ismail/.opam/system/lib/lwt_log/core -I /home/ismail/.opam/system/lib/lwt_react -I /home/ismail/.opam/system/lib/lwt_ssl -I /home/ismail/.opam/system/lib/mew -I /home/ismail/.opam/system/lib/mew_vi -I /home/ismail/.opam/system/lib/mmap -I /home/ismail/.opam/system/lib/ocaml/threads -I /home/ismail/.opam/system/lib/ocplib-endian -I /home/ismail/.opam/system/lib/ocplib-endian/bigstring -I /home/ismail/.opam/system/lib/react -I /home/ismail/.opam/system/lib/result -I /home/ismail/.opam/system/lib/seq -I /home/ismail/.opam/system/lib/sexplib0 -I /home/ismail/.opam/system/lib/ssl -I /home/ismail/.opam/system/lib/stdio -I /home/ismail/.opam/system/lib/stringext -I /home/ismail/.opam/system/lib/textwrap -I /home/ismail/.opam/system/lib/trie -I /home/ismail/.opam/system/lib/uri -I /home/ismail/.opam/system/lib/zed -intf-suffix .ml -no-alias-deps -opaque -open Ocamlgemini -o lib/.ocamlgemini.objs/native/ocamlgemini__Demo.cmx -c -impl lib/demo.ml)
+$ (cd _build/default && /home/ismail/.opam/system/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.ocamlgemini.objs/byte -I lib/.ocamlgemini.objs/native -I /home/ismail/.opam/system/lib/angstrom -I /home/ismail/.opam/system/lib/base -I /home/ismail/.opam/system/lib/base/base_internalhash_types -I /home/ismail/.opam/system/lib/base/caml -I /home/ismail/.opam/system/lib/base/shadow_stdlib -I /home/ismail/.opam/system/lib/bigarray-compat -I /home/ismail/.opam/system/lib/bigstringaf -I /home/ismail/.opam/system/lib/camomile -I /home/ismail/.opam/system/lib/camomile/default_config -I /home/ismail/.opam/system/lib/camomile/dyn -I /home/ismail/.opam/system/lib/camomile/lib_default -I /home/ismail/.opam/system/lib/camomile/library -I /home/ismail/.opam/system/lib/charInfo_width -I /home/ismail/.opam/system/lib/lambda-term -I /home/ismail/.opam/system/lib/lwt -I /home/ismail/.opam/system/lib/lwt/unix -I /home/ismail/.opam/system/lib/lwt_log -I /home/ismail/.opam/system/lib/lwt_log/core -I /home/ismail/.opam/system/lib/lwt_react -I /home/ismail/.opam/system/lib/lwt_ssl -I /home/ismail/.opam/system/lib/mew -I /home/ismail/.opam/system/lib/mew_vi -I /home/ismail/.opam/system/lib/mmap -I /home/ismail/.opam/system/lib/ocaml/threads -I /home/ismail/.opam/system/lib/ocplib-endian -I /home/ismail/.opam/system/lib/ocplib-endian/bigstring -I /home/ismail/.opam/system/lib/react -I /home/ismail/.opam/system/lib/result -I /home/ismail/.opam/system/lib/seq -I /home/ismail/.opam/system/lib/sexplib0 -I /home/ismail/.opam/system/lib/ssl -I /home/ismail/.opam/system/lib/stdio -I /home/ismail/.opam/system/lib/stringext -I /home/ismail/.opam/system/lib/textwrap -I /home/ismail/.opam/system/lib/trie -I /home/ismail/.opam/system/lib/uri -I /home/ismail/.opam/system/lib/zed -intf-suffix .ml -no-alias-deps -opaque -open Ocamlgemini -o lib/.ocamlgemini.objs/native/ocamlgemini__Network.cmx -c -impl lib/network.ml)
+$ (cd _build/default && /home/ismail/.opam/system/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I bin/.main.eobjs/byte -I /home/ismail/.opam/system/lib/angstrom -I /home/ismail/.opam/system/lib/base -I /home/ismail/.opam/system/lib/base/base_internalhash_types -I /home/ismail/.opam/system/lib/base/caml -I /home/ismail/.opam/system/lib/base/shadow_stdlib -I /home/ismail/.opam/system/lib/bigarray-compat -I /home/ismail/.opam/system/lib/bigstringaf -I /home/ismail/.opam/system/lib/camomile -I /home/ismail/.opam/system/lib/camomile/default_config -I /home/ismail/.opam/system/lib/camomile/dyn -I /home/ismail/.opam/system/lib/camomile/lib_default -I /home/ismail/.opam/system/lib/camomile/library -I /home/ismail/.opam/system/lib/charInfo_width -I /home/ismail/.opam/system/lib/lambda-term -I /home/ismail/.opam/system/lib/lwt -I /home/ismail/.opam/system/lib/lwt/unix -I /home/ismail/.opam/system/lib/lwt_log -I /home/ismail/.opam/system/lib/lwt_log/core -I /home/ismail/.opam/system/lib/lwt_react -I /home/ismail/.opam/system/lib/lwt_ssl -I /home/ismail/.opam/system/lib/mew -I /home/ismail/.opam/system/lib/mew_vi -I /home/ismail/.opam/system/lib/mmap -I /home/ismail/.opam/system/lib/ocaml/threads -I /home/ismail/.opam/system/lib/ocplib-endian -I /home/ismail/.opam/system/lib/ocplib-endian/bigstring -I /home/ismail/.opam/system/lib/react -I /home/ismail/.opam/system/lib/result -I /home/ismail/.opam/system/lib/seq -I /home/ismail/.opam/system/lib/sexplib0 -I /home/ismail/.opam/system/lib/ssl -I /home/ismail/.opam/system/lib/stdio -I /home/ismail/.opam/system/lib/stringext -I /home/ismail/.opam/system/lib/textwrap -I /home/ismail/.opam/system/lib/trie -I /home/ismail/.opam/system/lib/uri -I /home/ismail/.opam/system/lib/zed -I lib/.ocamlgemini.objs/byte -no-alias-deps -opaque -o bin/.main.eobjs/byte/dune__exe__Main.cmo -c -impl bin/main.ml)
+$ (cd _build/default && /home/ismail/.opam/system/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /home/ismail/.opam/system/lib/angstrom -I /home/ismail/.opam/system/lib/base -I /home/ismail/.opam/system/lib/base/base_internalhash_types -I /home/ismail/.opam/system/lib/base/caml -I /home/ismail/.opam/system/lib/base/shadow_stdlib -I /home/ismail/.opam/system/lib/bigarray-compat -I /home/ismail/.opam/system/lib/bigstringaf -I /home/ismail/.opam/system/lib/camomile -I /home/ismail/.opam/system/lib/camomile/default_config -I /home/ismail/.opam/system/lib/camomile/dyn -I /home/ismail/.opam/system/lib/camomile/lib_default -I /home/ismail/.opam/system/lib/camomile/library -I /home/ismail/.opam/system/lib/charInfo_width -I /home/ismail/.opam/system/lib/lambda-term -I /home/ismail/.opam/system/lib/lwt -I /home/ismail/.opam/system/lib/lwt/unix -I /home/ismail/.opam/system/lib/lwt_log -I /home/ismail/.opam/system/lib/lwt_log/core -I /home/ismail/.opam/system/lib/lwt_react -I /home/ismail/.opam/system/lib/lwt_ssl -I /home/ismail/.opam/system/lib/mew -I /home/ismail/.opam/system/lib/mew_vi -I /home/ismail/.opam/system/lib/mmap -I /home/ismail/.opam/system/lib/ocaml/threads -I /home/ismail/.opam/system/lib/ocplib-endian -I /home/ismail/.opam/system/lib/ocplib-endian/bigstring -I /home/ismail/.opam/system/lib/react -I /home/ismail/.opam/system/lib/result -I /home/ismail/.opam/system/lib/seq -I /home/ismail/.opam/system/lib/sexplib0 -I /home/ismail/.opam/system/lib/ssl -I /home/ismail/.opam/system/lib/stdio -I /home/ismail/.opam/system/lib/stringext -I /home/ismail/.opam/system/lib/textwrap -I /home/ismail/.opam/system/lib/trie -I /home/ismail/.opam/system/lib/uri -I /home/ismail/.opam/system/lib/zed -I lib/.ocamlgemini.objs/byte -I lib/.ocamlgemini.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /home/ismail/.opam/system/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/ocamlgemini.cmxa lib/.ocamlgemini.objs/native/ocamlgemini.cmx lib/.ocamlgemini.objs/native/ocamlgemini__Network.cmx lib/.ocamlgemini.objs/native/ocamlgemini__Demo.cmx)
+$ (cd _build/default && /home/ismail/.opam/system/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -shared -linkall -I lib -o lib/ocamlgemini.cmxs lib/ocamlgemini.cmxa)
+$ (cd _build/default && /home/ismail/.opam/system/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe /home/ismail/.opam/system/lib/base/base_internalhash_types/base_internalhash_types.cmxa -I /home/ismail/.opam/system/lib/base/base_internalhash_types /home/ismail/.opam/system/lib/base/caml/caml.cmxa /home/ismail/.opam/system/lib/sexplib0/sexplib0.cmxa /home/ismail/.opam/system/lib/base/shadow_stdlib/shadow_stdlib.cmxa /home/ismail/.opam/system/lib/base/base.cmxa -I /home/ismail/.opam/system/lib/base /home/ismail/.opam/system/lib/stdio/stdio.cmxa /home/ismail/.opam/system/lib/stringext/stringext.cmxa /home/ismail/.opam/system/lib/bigarray-compat/bigarray_compat.cmxa /home/ismail/.opam/system/lib/bigstringaf/bigstringaf.cmxa -I /home/ismail/.opam/system/lib/bigstringaf /home/ismail/.opam/system/lib/angstrom/angstrom.cmxa /home/ismail/.opam/system/lib/uri/uri.cmxa -I /home/ismail/.opam/system/lib/ocaml /home/ismail/.opam/system/lib/result/result.cmxa /home/ismail/.opam/system/lib/seq/seq.cmxa /home/ismail/.opam/system/lib/lwt/lwt.cmxa /home/ismail/.opam/system/lib/ocaml/unix.cmxa -I /home/ismail/.opam/system/lib/ocaml /home/ismail/.opam/system/lib/ocaml/bigarray.cmxa -I /home/ismail/.opam/system/lib/ocaml /home/ismail/.opam/system/lib/mmap/mmap.cmxa /home/ismail/.opam/system/lib/ocplib-endian/ocplib_endian.cmxa /home/ismail/.opam/system/lib/ocplib-endian/bigstring/ocplib_endian_bigstring.cmxa /home/ismail/.opam/system/lib/ocaml/threads/threads.cmxa -I /home/ismail/.opam/system/lib/ocaml /home/ismail/.opam/system/lib/lwt/unix/lwt_unix.cmxa -I /home/ismail/.opam/system/lib/lwt/unix /home/ismail/.opam/system/lib/ssl/ssl.cmxa -I /home/ismail/.opam/system/lib/ssl /home/ismail/.opam/system/lib/lwt_ssl/lwt_ssl.cmxa /home/ismail/.opam/system/lib/ocaml/str.cmxa -I /home/ismail/.opam/system/lib/ocaml /home/ismail/.opam/system/lib/textwrap/textwrap.cmxa /home/ismail/.opam/system/lib/react/react.cmxa /home/ismail/.opam/system/lib/lwt_react/lwt_react.cmxa /home/ismail/.opam/system/lib/camomile/default_config/camomileDefaultConfig.cmxa /home/ismail/.opam/system/lib/camomile/library/camomileLibrary.cmxa /home/ismail/.opam/system/lib/camomile/lib_default/camomileLibraryDefault.cmxa /home/ismail/.opam/system/lib/camomile/dyn/camomileLibraryDyn.cmxa /home/ismail/.opam/system/lib/camomile/camomile_yuge.cmxa /home/ismail/.opam/system/lib/charInfo_width/charInfo_width.cmxa /home/ismail/.opam/system/lib/zed/zed.cmxa /home/ismail/.opam/system/lib/lwt_log/core/lwt_log_core.cmxa /home/ismail/.opam/system/lib/lwt_log/lwt_log.cmxa /home/ismail/.opam/system/lib/trie/trie.cmxa /home/ismail/.opam/system/lib/mew/mew.cmxa /home/ismail/.opam/system/lib/mew_vi/mew_vi.cmxa /home/ismail/.opam/system/lib/lambda-term/lambda_term.cmxa -I /home/ismail/.opam/system/lib/lambda-term lib/ocamlgemini.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)

@@ -1,0 +1,4 @@
+(executable
+ (public_name ocamlgemini)
+ (name main)
+ (libraries ocamlgemini base stdio uri lwt lwt.unix ssl lwt_ssl))

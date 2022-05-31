@@ -1,0 +1,19 @@
+PKG base
+PKG stdio
+PKG uri
+PKG lwt
+PKG lwt.unix
+PKG ssl
+PKG lwt.ssl
+PKG textwrap
+PKG lambda-term
+PKG ocamlgemini
+PKG listzipper
+
+# structure of my awesome project
+S .
+S bin/*
+S lib/*
+S lib/*/*
+B lib/_build
+B ./_build/default/lib/.ocamlgemini.objs/byte/

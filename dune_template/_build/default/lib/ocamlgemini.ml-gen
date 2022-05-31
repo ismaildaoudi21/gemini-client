@@ -1,0 +1,6 @@
+(** @canonical Ocamlgemini.Demo *)
+module Demo = Ocamlgemini__Demo
+
+
+(** @canonical Ocamlgemini.Network *)
+module Network = Ocamlgemini__Network
